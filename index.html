@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Jackson Wright</title>
+    <style>
+        :root {
+            --bg: #faf9f6;
+            --text: #18181b;
+            --muted: #52525b;
+            --subtle: #71717a;
+            --rule: #e4e4e7;
+            --accent: #18181b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.7;
+            padding: 6rem 1.5rem 5rem;
+        }
+
+        .page {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 4.5rem;
+        }
+
+        h1 {
+            font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            font-size: 2.35rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 0.6rem;
+        }
+
+        .affiliation {
+            font-size: 0.95rem;
+            color: var(--subtle);
+            letter-spacing: 0.01em;
+        }
+
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--subtle);
+            margin-bottom: 2.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .entry {
+            margin-bottom: 4rem;
+        }
+
+        .entry:last-of-type {
+            margin-bottom: 2rem;
+        }
+
+        .entry-meta {
+            font-size: 0.8rem;
+            color: var(--subtle);
+            letter-spacing: 0.02em;
+            margin-bottom: 0.45rem;
+        }
+
+        h2 {
+            font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            line-height: 1.35;
+            margin-bottom: 0.85rem;
+        }
+
+        p {
+            font-size: 0.98rem;
+            color: var(--muted);
+            margin-bottom: 1.35rem;
+        }
+
+        .text-link {
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text);
+            padding-bottom: 2px;
+            transition: opacity 0.2s ease;
+        }
+
+        .text-link:hover {
+            opacity: 0.55;
+        }
+
+        .media-frame {
+            margin-top: 1.5rem;
+            border: 1px solid var(--rule);
+            background: #111111;
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            margin-top: 5.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--rule);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--subtle);
+        }
+
+        footer a {
+            color: var(--subtle);
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        footer a:hover {
+            color: var(--text);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 3.5rem 1.25rem 3.5rem;
+            }
+            h1 {
+                font-size: 1.95rem;
+            }
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Jackson Wright</h1>
+            <div class="affiliation">M.S. Biology, NJIT &mdash; Computational &amp; Systems Neuroscience</div>
+        </header>
+
+        <main>
+            <div class="section-label">Selected Work</div>
+
+            <section class="entry">
+                <div class="entry-meta">Working Manuscript &middot; Active Inference, Modern Hopfield Networks, Computational Psychiatry</div>
+                <h2>An Active Inference Account of Gender Dysphoria</h2>
+                <p>A computational framework formalizing identity development, social threat vigilance, and biopsychosocial distress within a hybrid continuous-discrete POMDP and continuous attractor architecture.</p>
+                <a class="text-link" href="HMM_GD%20(93).pdf" target="_blank" rel="noopener">Read working draft (PDF) &rarr;</a>
+            </section>
+
+            <section class="entry">
+                <div class="entry-meta">Software &middot; Python, NetworkX, PyVis</div>
+                <h2>BibSort</h2>
+                <p>An interactive bibliographic mapping and auditing tool using weighted co-occurrence networks and custom project ontologies to surface conceptual bridges across disconnected research domains.</p>
+                <div class="media-frame">
+                    <video controls preload="metadata">
+                        <source src="Screen%20Recording%202026-10-01%20145823%20(1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <span>jackson.james.wright@gmail.com</span>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </footer>
+    </div>
+</body>
+</html>
